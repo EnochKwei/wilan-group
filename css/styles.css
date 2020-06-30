@@ -20,7 +20,7 @@ h1, h2, h4, h5, h6 {
 	position: absolute;
 	height: 156px;
 	width: 150px;
-	left: 140px;
+	left: 0;
 	top: -9px;
 }
 
@@ -136,6 +136,10 @@ h1, h2, h4, h5, h6 {
 	text-decoration: underline grey;
 }
 
+.our-page-title {
+  text-align: left;
+}
+
 .hr-about-us,
 .hr-our-services {
   border: dotted grey 6px;
@@ -169,6 +173,10 @@ h1, h2, h4, h5, h6 {
   margin: 10px;
 }
 
+.contact-box {
+  margin: 0;
+}
+
 .services-list {
   text-align: left;
   color: #888c89;
@@ -180,6 +188,8 @@ h1, h2, h4, h5, h6 {
   text-align: left;
   font-size: 0.9rem;
 }
+
+
 
 .our-services-img {
   text-align: left;
