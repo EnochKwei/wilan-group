@@ -130,14 +130,15 @@ h1, h2, h4, h5, h6 {
 	margin-top: 20px;
 }
 
-.about-us-title,
-.our-team-title,
-.our-page-title {
-	text-decoration: underline grey;
+.welcome-page {
+  padding-bottom: 10px;
+  border-bottom: 6px dotted grey;
+  line-height: 48px;
 }
 
 .our-page-title {
   text-align: left;
+
 }
 
 .hr-about-us,
@@ -146,6 +147,10 @@ h1, h2, h4, h5, h6 {
   border-bottom: none;
   width: 4%;
   margin: 40px auto;
+}
+
+.hr-our-page {
+
 }
 
 
