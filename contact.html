@@ -76,59 +76,68 @@
       <div class="contact-us">
         <h2>Contact Us</h2>
         <p class="intro">
-          Our contact details are below.<br />
           Use the form to send us a message and we promise get back to you shortly.
         </p>
       </div>
       <hr class="hr-our-services">
-      <!-- <div class="row">
-        <div class="page-title text-center">
-          <p align="justify"><i class="fa fa-map-marker" style="font-size:30px;color:#e43c5c"></i> Address: Location GPS Code GM0242034<br>
-            <i class="fa fa-phone-square" style="font-size:30px;color:#e43c5c"></i> Phone Number: +233 (0) 342293131<br>
-            <i class="fa fa-envelope" style="font-size:30px;color:#e43c5c"></i> Send us a message with the form below and we will reply you immediately<br></p>
-
+      <div class="row">
+        <div class="contact-box col-lg-4 col-md-6 col-sm-12">
+          <p class="location-img">
+            <ion-icon size="large" name="location"></ion-icon>&nbsp;Address: Location GPS Code GM0242034
+          </p>
         </div>
-      </div> -->
-      <!-- <div class="row"> -->
-        <div class="form-sec">
-          <form id="frmContact" action="" method="POST" novalidate>
-            <div class="row">
-              <div class="col-lg-4 col-sm-12 form-group">
-                <input type="text" name="name" class="form-control text-field-box" id="name" placeholder="Your Name" autocomplete="off" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="col-lg-4 col-sm-12 form-group">
-                <input type="email" class="form-control text-field-box" name="email" id="email" placeholder="Your Email" autocomplete="off" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="col-lg-4 col-sm-12 form-group">
-                <input type="text" class="form-control text-field-box" name="phone" id="phone" placeholder="Phone Number" autocomplete="off" data-rule="number" data-msg="Phone Number" />
-                <div class="validation"></div>
-              </div>
-            </div>
+        <div class="contact-box col-lg-4 col-md-6 col-sm-12">
+          <p class="phone-number-img">
+            <ion-icon size="large" name="call"></ion-icon>&nbsp;Phone Number: +233 (0) 342293131
+          </p>
+        </div>
+        <div class="contact-box col-lg-4 col-sm-12">
+          <!-- <p class="email-img">
+            <ion-icon size="large" name="mail"></ion-icon>&nbsp;<a href="contact.html">Lets us hear from you</a>
+          </p> -->
+        </div>
 
-            <div class="col form-group">
-              <textarea class="form-control text-field-box" name="content" rows="3" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+      </div>
+        <hr class="hr-our-services">
+      <div class="form-sec">
+        <form id="frmContact" action="" method="POST" novalidate>
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 form-group">
+              <input type="text" name="name" class="form-control text-field-box" id="name" placeholder="Your Name" autocomplete="off" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
               <div class="validation"></div>
-
-              <div class="g-recaptcha" data-sitekey="6Lc8rrIUAAAAAN5xp0domm9PZj_6qGZU2LTDsMLh"></div>
-
-              <div id="mail-status"></div>
-              <div id="loader-icon" style="display:none;"><img src="img/loader.gif" /></div>
-
-              <button class="button-medium" id="contact-submit" type="submit" name="contact">Send</button>
             </div>
-          </form>
+            <div class="col-lg-4 col-sm-12 form-group">
+              <input type="email" class="form-control text-field-box" name="email" id="email" placeholder="Your Email" autocomplete="off" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="col-lg-4 col-sm-12 form-group">
+              <input type="text" class="form-control text-field-box" name="phone" id="phone" placeholder="Phone Number" autocomplete="off" data-rule="number" data-msg="Phone Number" />
+              <div class="validation"></div>
+            </div>
+          </div>
+
+          <div class="col form-group">
+            <textarea class="form-control text-field-box" name="content" rows="3" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            <div class="validation"></div>
+
+            <div class="g-recaptcha" data-sitekey="6Lc8rrIUAAAAAN5xp0domm9PZj_6qGZU2LTDsMLh"></div>
+
+            <div id="mail-status"></div>
+            <div id="loader-icon" style="display:none;"><img src="img/loader.gif" /></div>
+
+            <button class="button-medium" id="contact-submit" type="submit" name="contact">Send</button>
+          </div>
+        </form>
 
 
-          <script>
-            function submit() {
-              /*Put all the data posting code here*/
-              document.getElementById("frmContact").reset();
-            }
-          </script>
+        <script>
+          function submit() {
+            /*Put all the data posting code here*/
+            document.getElementById("frmContact").reset();
+          }
+        </script>
 
-        </div>
+      </div>
       <!-- </div> -->
     </div>
   </section>
@@ -185,39 +194,40 @@
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <script>
-	$(document).ready(function (e){
-		$("#frmContact").on('submit',(function(e){
-			e.preventDefault();
-			$("#mail-status").hide();
-			$('#send-message').hide();
-			$('#loader-icon').show();
-			$.ajax({
-				url: "contact.php",
-				type: "POST",
-				dataType:'json',
-				data: {
-				"name":$('input[name="name"]').val(),
-				"email":$('input[name="email"]').val(),
-				"phone":$('input[name="phone"]').val(),
-				"content":$('textarea[name="content"]').val(),
-				"g-recaptcha-response":$('textarea[id="g-recaptcha-response"]').val()},
-				success: function(response){
-				$("#mail-status").show();
-				$('#loader-icon').hide();
-				if(response.type == "error") {
-					$('#send-message').show();
-					$("#mail-status").attr("class","error");
-				} else if(response.type == "message"){
-					$('#send-message').hide();
-					$("#mail-status").attr("class","success");
-				}
-				$("#mail-status").html(response.text);
-				},
-				error: function(){}
-			});
-		}));
-	});
-	</script>
+    $(document).ready(function(e) {
+      $("#frmContact").on('submit', (function(e) {
+        e.preventDefault();
+        $("#mail-status").hide();
+        $('#send-message').hide();
+        $('#loader-icon').show();
+        $.ajax({
+          url: "contact.php",
+          type: "POST",
+          dataType: 'json',
+          data: {
+            "name": $('input[name="name"]').val(),
+            "email": $('input[name="email"]').val(),
+            "phone": $('input[name="phone"]').val(),
+            "content": $('textarea[name="content"]').val(),
+            "g-recaptcha-response": $('textarea[id="g-recaptcha-response"]').val()
+          },
+          success: function(response) {
+            $("#mail-status").show();
+            $('#loader-icon').hide();
+            if (response.type == "error") {
+              $('#send-message').show();
+              $("#mail-status").attr("class", "error");
+            } else if (response.type == "message") {
+              $('#send-message').hide();
+              $("#mail-status").attr("class", "success");
+            }
+            $("#mail-status").html(response.text);
+          },
+          error: function() {}
+        });
+      }));
+    });
+  </script>
 
 
 </body>
