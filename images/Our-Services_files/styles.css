@@ -1,0 +1,427 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat-Bold', Arial, Sans-Serif;
+	font-size: 180%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+
+ /* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 50rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+
+.bg-trans { 
+background: transparent !important;
+}
+
+.bg-trans.scrolled{
+background: white !important;
+border-bottom: 1px solid lightgrey;
+}
+
+
+#features {
+	margin-top: 150px;
+}
+
+.row {
+    max-width: 100%;
+    margin: 0 auto;
+		text-align: center;
+}
+
+
+
+
+/* icons */
+.facebook-icon {
+	color: #4267B2;
+}
+
+.twitter-icon {
+	color: #1DA1F2;
+}
+
+.linkedin-icon {
+	color: #2867B2;
+}
+
+.facebook-icon:hover,
+.twitter-icon:hover,
+.linkedin-icon:hover {
+	color: white;
+}
+
+/* Nav bar */
+.navbar {
+ min-height: 15px;;
+}
+
+.wilan-group {
+  position: absolute;
+  padding-top: 10px;
+
+}
+
+.navbar-brand {
+  font-weight: bold;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+
+.navbar-nav  li a:hover {
+    color: black !important;
+		text-decoration: underline grey;
+}
+
+
+.nav-link {
+	color: grey;
+}
+
+.carousel-section {
+  padding-top: 70px;
+}
+
+/* Home page */
+.our-page-section {
+	margin-top: 100px;
+}
+
+.read-me {
+	text-align: left;
+}
+
+.our-page-img {
+	position: left;
+	/* padding-left: 50px;
+	padding-bottom: 50px; */
+}
+
+.our-page-text {
+	color: grey;
+	text-align: justify;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+
+/* About-us Section */
+.long-copy {
+  margin-bottom: 30px;
+	text-align: center;
+}
+
+.about-us-title {
+	text-align: center;
+}
+
+ h5 {
+  font-size: 20px;
+  margin-top: 10px;
+
+ }
+
+
+.about-us-section {
+  margin-top: 50px;
+	padding-top: 100px;
+	width:auto;
+	margin: auto;
+}
+
+.intro {
+  width: 50%;
+  margin: auto;
+}
+
+.about-us-text {
+	width: 67%;
+	margin: auto;
+	text-align: justify;
+	margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.welcome-page {
+  padding-bottom: 10px;
+  border-bottom: 6px dotted grey;
+  line-height: 48px;
+}
+
+.our-page-title {
+  text-align: left;
+
+}
+
+.hr-about-us,
+.hr-our-services {
+  border: dotted grey 6px;
+  border-bottom: none;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  width: 6%;
+}
+
+.hr-our-page {
+
+}
+
+
+/* Our Services */
+.services-title {
+	text-align: center;
+  margin-top: 30px;
+
+}
+
+.our-services-text {
+	text-align: justify;
+  margin-bottom: 30px;
+}
+
+.more-services {
+	text-align: left;
+	padding-left: 15px;
+}
+
+
+.services-box {
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  margin: 10px;
+  align-content: left;
+}
+
+.contact-box {
+  margin-bottom: 25px;
+
+
+}
+
+.services-list {
+  text-align: left;
+  color: #888c89;
+}
+
+li{
+  text-align: left;
+}
+
+.location-img,
+.phone-number-img,
+.email-img {
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+
+
+.our-services-img {
+  text-align: left;
+}
+.services-icon {
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+
+
+/* The team behind */
+.our-team-section,
+.our-services-section,
+.our-page-section,
+.contact-us-section {
+	width: 85%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.contact-us-section {
+  margin-bottom: 40px;
+}
+
+.position {
+	text-align: center;
+}
+
+h3 {
+color: grey;
+font-size: 20px;
+vertical-align: middle;
+
+
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+		margin-bottom: 15%;
+    display: block;
+}
+
+cite img {
+  height: 350px;
+  width: 400px;
+  border-radius: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
+
+}
+
+
+
+
+
+/* Footer */
+
+.footer-nav {
+	list-style: none;
+	text-align: center;
+	margin-left: 10px;
+	padding-left: 10px;
+	color: #000;
+}
+
+
+.social-links {
+	list-style: none;
+	text-align: center;
+}
+
+.social-links li {
+	display: inline-block;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
+
+
+
+/* Contact Form */
+#frmContact {
+  align-content: center;
+}
+
+.text-field-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    color: #666;
+    font-size: 14px;
+    padding: 0 35px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.form-sec textarea {
+    height: 220px;
+}
+
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+
+#sendmessage {
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+	display:block;
+}
+
+.button-medium {
+    background: #1DA1F2;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #1DA1F2;
+    box-shadow: none;
+    outline: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+
+footer {
+	background-color: #e0dede;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 50%;
+}

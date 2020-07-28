@@ -34,8 +34,8 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-lg navbar-light bg-trans fixed-top">
+    <a class="navbar-brand" href="index.html">
       <img src="images/wilanlogo-cutout.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
       <span class="wilan-group">Wilan Group</span>
     </a>
@@ -65,33 +65,60 @@
 
 
   <section class="carousel-section">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/slypic/1.jpg" height="600" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/slypic/2.jpg" height="600" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/slypic/3.jpg" height="600" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/slypic/4.jpg" height="600" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/slypic/5.jpg" height="600" alt="Third slide">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <img src="images/slypic/slydd.jpg" class="d-block w-100" alt="...">
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h2>OUR BUSINESS IS MAKING YOURS SHINE</h2>
+            <p>We use special liquid soaps and high-quality materials to clean your building, walls, windows, alucobond and metallic surfaces, giving it a shiny and attractive finish. </p>
+            <p><a class="btn btn-lg btn-primary" href="contact.html" role="button">Contact Us</a></p>
+          </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+
+      <div class="carousel-item">
+        
+        <img src="images/slypic/slydf.jpg" class="d-block w-100" alt="...">
+        <div class="container">
+          <div class="carousel-caption">
+            <h2>NO BUILDING IS TOO HIGH FOR US</h2>
+            <p>Our Rope access methods eliminate the need for heavy equipment to access high areas or tight quarters that would be impossible without scaffolding, rigging, or other big equipment.</p>
+            <p><a class="btn btn-lg btn-primary" href="contact.html" role="button">Call Us</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        
+      <img src="images/slypic/slyde.jpg" class="d-block w-100" alt="...">
+
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h2>WE LOVE WHAT WE DO</h2>
+            <p>We make your windows so clean, you foget they are even there.</p>
+            <p><a class="btn btn-lg btn-primary" href="contact.html" role="button">Send us an email</a></p>
+          </div>
+        </div>
+      </div>
     </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
   </section>
 
 
@@ -104,17 +131,17 @@
   <section class="our-page-section">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <cite class="our-page-img"><img src="images/Fabio.jpeg" alt="Customer 1 photo"></cite>
+        <div class="col">
+          <cite class="our-page-img"><img src="images/Wilson.jpg" alt="Customer 1 photo"></cite>
           
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col">
           <h2 class="our-page-title"><span class="welcome-page">Welcome to our page</span></h2>
-          <p class="our-page-text">Established in 2012, Wilan Oil Field Services Ltd is an indigenous wholly owned Ghanaian Rope Access Company based in Accra. The company was established by a group of highly talented individuals, whose skills encapsulateessential areas of business management and rope access.</p>
+          <p class="our-page-text">Established in 2012, Wilan Oil Field Services Ltd is an indigenous wholly owned Ghanaian Rope Access Company based in Accra. The company was established by a group of highly talented individuals, whose skills encapsulate essential areas of business management and rope access.</p>
 
             <p class="our-page-text">Our business offers practical rope access solutions to our clients with the intention to expand to international levels. We render such services by assembling highly qualified teams from our staff complement. Through synergies and
             diversity, we solve problems, which in turn unlock the most value for our clients.</p>
-          <p class="read-me"><a href="about-us.html">Read more</a></p>
+          <p class="read-me"><a class="btn btn-sm btn-primary" href="about-us.html" role="button">Read more</a></p>
         </div>
       </div>
     </div>
@@ -125,36 +152,35 @@
   <!-- Our Services -->
 
   <section class="our-services-section">
+    <div class="container">
     <div class="our-services">
-      <h2>Our Services.</h2>
-      <p class="intro">Our catalogue of services can be found below, click read more to get detail information about a service.</p>
+      <h2>Our Services</h2>
     </div>
     <hr class="hr-our-services">
+
+
     <div class="row">
-      <div class="services-box col">
-        <p class="our-services-img">
-          <ion-icon class="services-icon" size="large" name="boat-outline"></ion-icon>
-        </p>
-        <p class="services-title">Offshore / Marine Services</p>
-        <p class="our-services-text">Wilan Oil Field Services specialize in high access projects by use of rope access techniques (IRATA, IWH). We are proud of our 100% safety record.<a href="our-services.html"> Read more</a></p>
+      <div class="services-box col-sm">
+        <p class="services-title-home">Rope Access</p>
+        <p class="our-services-text">We use advanced access methods such as double rope techniques as a cost-effective alternative to conventional scaffolding or cradle systems.</p>
       </div>
-      <div class="services-box col">
-        <p class="our-services-img">
-          <ion-icon class="services-icon" size="large" name="construct-outline"></ion-icon>
-        </p>
-        <p class="services-title">Fabrication</p>
-        <p class="our-services-text">Welding and fabrication of various pipeline including steam pressure pipes and cross-country pipeline, fabrication of new installations of various steel structures for the oil and gas industry.<a href="our-services.html"> Read more</a></p>
-      </div>
-      <div class="services-box col">
-        <p class="our-services-img">
+
+      <div class="services-box col-sm">
+     <!--   <p class="our-services-img">
           <ion-icon class="services-icon" size="large" name="search-outline"></ion-icon>
-        </p>
-        <p class="services-title">Visual Inspections</p>
-        <p class="our-services-text">Visual inspections are one of our more important, pre-work services as this allows for us to inspect, via a combination of pictures and a drawn-out plan of defects when relating to any construction works that might be required during any maintenance period on any structure.<a href="our-services.html"> Read more</a></p>
+        </p> -->
+        <p class="services-title-home">On and Offshore Pipeline Services</p>
+        <p class="our-services-text">Wilan Oil Field Services specialize in high access projects by use of rope access techniques (IRATA, IWH). We are proud of our 100% safety record. We have experienced teams that can perform the following offshore/marine services.</p>
       </div>
+
+         <div class="services-box col-sm">
+        <p class="services-title-home">General Maintenance</p>
+        <p class="our-services-text">Our skilled workforce is qualified in a vast variety of practices, such as: Welding, Signage repairs and installation, Bolt torque Woodwork, Steelwork, High pressure and Ultra high pressure washing.</p>
+      </div>
+
     </div>
     <div class="more-services">
-      <a href="our-services.html">View more Services</a>
+      <a class="btn btn-md btn-primary" href="our-services.html" role="button">view more services</a>
     </div>
     <hr>
   </section>
@@ -164,30 +190,59 @@
   <section class="our-services-section">
     <div class="container-fluid">
       <div class="our-services">
-        <h2>Contact Us</h2>
+        <h2>Our Contact</h2>
       </div>
       <hr class="hr-our-services">
       <div class="row">
-        <div class="contact-box col">
+        <div class="contact-box col-sm">
           <p class="location-img">
             <ion-icon size="large" name="location"></ion-icon>&nbsp;Address: Location GPS Code GM0242034
           </p>
         </div>
 
-        <div class="contact-box col">
+        <div class="contact-box col-sm">
           <p class="phone-number-img">
             <ion-icon size="large" name="call"></ion-icon>&nbsp;Phone Number: +233 (0) 342293131
           </p>
         </div>
-        <div class="contact-box col">
+        <div class="contact-box col-sm">
           <p class="email-img">
-            <ion-icon size="large" name="mail"></ion-icon>&nbsp;<a href="contact.html">Lets us hear from you</a>
+            <ion-icon size="large" name="mail"></ion-icon>&nbsp;<a href="contact.html">Send us an email here</a>
           </p>
         </div>
 
       </div>
     </div>
+    <hr>
   </section>
+
+  <!--Our Clients -->
+<section class="our-services-section">
+  <div class="container">
+      <div class="our-rate-card-row">
+      <h2 class="about-us-title">Our Partners and Clients</h2>
+        <hr class="hr-about-us">
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-4">
+          <img src="images/services/irata.png" class="img-fluid" alt="Responsive image" width="150" height="150">
+        </div>
+
+        <div class="col-4">
+         <img src="images/services/manet.png" class="img-fluid" alt="Responsive image" width="200" height="200">
+         
+        </div>
+
+        <div class="col-4">
+          <img src="images/services/nester.png" class="img-fluid" alt="Responsive image" width="120" height="120">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <p></p>
+</section>
+
 
 
 
@@ -230,6 +285,12 @@
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat|Ubuntu" rel="stylesheet">
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <!-- This changes the colour of the navbar on scrolling -->
+  <script>
+ $(window).scroll(function(){
+ $('nav').toggleClass('scrolled', $(this).scrollTop() > 700);
+ });
+</script>
 
 
 </body>
